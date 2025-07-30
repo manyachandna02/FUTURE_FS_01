@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Manya Chandna</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills & Interests</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Manya Chandna</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+            <ul>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Skills & Interests</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+        </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/ppic.jpg" alt="Manya Chandna profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Manya Chandna</h1>
+        <p class="section__text__p2">Aspiring Software Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Resume Manya.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+           <a
+    href="https://www.linkedin.com/in/manya-chandna-42a9ba31b/"
+    target="_blank"
+    rel="noopener noreferrer"
+    title="Visit my LinkedIn"
+  >
+    <i class="fab fa-linkedin icon"></i>
+  </a>
+<span class="fallback-text">LinkedIn</span>
+    <a
+  href="https://github.com/manyachandna02"
+  target="_blank"
+  rel="noopener noreferrer"
+  title="Visit my GitHub"
+>
+  <i class="fab fa-github icon"></i>
+</a>
+<span class="fallback-text">GitHub</span>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+            <div class="details-container">
+              
+              <h3>Education</h3>
+              <p>B.tech Computer Science (Data Science)</p>
+            </div>
+          </div>
+          <div class="text-container">
+              <p> <br>
+    Hello! I'm <strong>Manya Chandna</strong>, a passionate Computer Science and Data Science undergraduate at Guru Tegh Bahadur Institute of Technology (GGSIPU, Delhi) with a current CGPA of 8.94.
+    I'm an aspiring software engineer and frontend developer who thrives on innovation, teamwork, and continuous learning.
+  </p>
+
+  <p>
+    I serve as a <strong>Student Placement Coordinator</strong> at my college, where I actively contribute to connecting students with career opportunities and organizing placement activities. I enjoy working in dynamic teams and collaborating on real-world challenges.
+    I have a foundation in C, C++, Java, Python, and web technologies including HTML, CSS, and JavaScript. I'm currently diving deeper into areas like AI, Machine Learning, and Data Science.
+  </p>
+          </div>
+        </div>
+      </div>
+      <i
+  class="fas fa-arrow-down icon arrow"
+  onclick="location.href='./#experience'"
+  title="Scroll to Skills & Interests"
+></i>
+
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills & Interests</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical Proficiency</h2>
+            <div class="article-container">
+                <p>Programming Languages: Proficient in C and C++, with foundational knowledge of Java and Python <br>
+
+Web Development: Experience in creating responsive designs using HTML, CSS, and JavaScript <br>
+
+Tools & Platforms: GitHub for version control, VS Code as primary IDE, MySQL for databases, MATLAB and Jupyter for data analysis</p>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Soft Skills</h2>
+            <div class="article-container">
+                <p>
+Effective communicator with strong teamwork and leadership qualities <br>
+
+Adaptable to new technologies and environments <br>
+
+Problem-solving mindset with a critical thinking approach to challenges</p>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title"> Professional Interests</h2>
+            <div class="article-container">
+                <p>Deeply interested in Artificial Intelligence, Machine Learning, and Data Science <br>
+
+Passionate about frontend development and building user-centric digital experiences <br>
+
+Enthusiastic about participating in tech events, hackathons, and collaborative coding challenges
+
+</p>
+            </div>
+          </div>
+        </div>
+   </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <i
+  class="fas fa-arrow-down icon arrow"
+  onclick="window.location.href='#contact'"
+  title="Scroll to Contact"
+  style="cursor: pointer;"
+></i>
+
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <i
+  class="fas fa-envelope icon contact-icon email-icon"
+  title="Email"
+></i>
+          <p><a href="mailto:manyachandnapnp05@gmail.com">manyachandnapnp05@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+        <a href="https://www.linkedin.com/in/manya-chandna-42a9ba31b/" target="_blank" title="Visit LinkedIn">
+  <i class="fab fa-linkedin icon contact-icon"></i>
+</a>
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills and Interests</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Manya Chandna. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
